@@ -1,0 +1,44 @@
+{
+  "name": "challenge",
+  "version": "1.0.0",
+  "description": "a take home challege",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/webpack -d && node ./bin/www",
+    "start:dev": "./node_modules/.bin/webpack -d && nodemon ./bin/www --exec babel-node",
+    "watch": "webpack --watch",
+    "build": "./node_modules/.bin/webpack -d"
+  },
+  "author": "Diana Vashti",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.17.1",
+    "cookie-parser": "^1.4.3",
+    "express": "~4.14.0",
+    "html-webpack-plugin": "~2.24.1",
+    "json-loader": "^0.5.4",
+    "morgan": "^1.8.1",
+    "prop-types": "^15.6.0",
+    "react": "^15.5.7",
+    "react-dom": "^15.4.1",
+    "react-router": "^3.0.0",
+    "webpack": "~1.14.0",
+    "webpack-bundle-size-analyzer": "^2.5.0",
+    "webpack-dev-middleware": "^1.8.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-core": "~6.20.0",
+    "babel-loader": "~6.2.9",
+    "babel-plugin-transform-class-properties": "^6.19.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-regenerator": "^6.22.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-react": "~6.16.0",
+    "babel-runtime": "~6.20.0",
+    "babel-preset-env": "^1.6.1",
+    "nodemon": "~1.11.0"
+  }
+}
